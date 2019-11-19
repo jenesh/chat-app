@@ -6,19 +6,19 @@
 body {
     font: 13px Helvetica, Arial;
 }
-form {
+#form-chat {
     background: #000;
     padding: 3px;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
-form input {
+#form-chat input {
     border: 0;
     padding: 10px;
     width: 90%;
 }
-form button {
+#form-chat button {
     width: 9%;
     background: rgb(130, 224, 255);
     border: none;
@@ -33,11 +33,41 @@ form button {
 #messages li {
     padding: 5px 10px;
 }
-#messages li:nth-child(odd) {
+/* #messages li:nth-child(odd) {
     background: #eee;
-}
-
-
-/* body, #container {
-    height: 100vh;
 } */
+#message li {
+    background-color: #eee;
+}
+.user {
+    text-align: right;
+    background-color: lightblue;
+}
+#popUp {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: grey;
+    z-index: 50;
+}
+#nickname {
+    width: 200px;
+    height: 50px;
+    background-color: red;
+    position: fixed;
+    top: calc(50% - 25px);
+    left: calc(50% - 100px);
+}
+#name {
+    text-align: center;
+}
+.connected {
+    color:rgb(85, 236, 110);
+    font-style: italic;
+    font-weight: 900;
+}
+.disconnected {
+    color:rgb(223, 0, 0);
+    font-style: italic;
+    font-weight: 900;
+}
